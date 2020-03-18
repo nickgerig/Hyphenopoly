@@ -14,7 +14,7 @@
  * Use 'fs' in node environment and fallback to http if the module gets executed
  * in a browser environment (e.g. browserified)
  */
-let loader = require("fs");
+let loader = null;
 
 const {StringDecoder} = require("string_decoder");
 
